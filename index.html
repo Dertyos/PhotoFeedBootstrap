@@ -33,39 +33,49 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&family=Roboto:wght@100&family=Signika+Negative:wght@500&display=swap"
+        rel="stylesheet">
 
 
 </head>
 
-<body>
+<body class="color-white">
 
 
-    <nav class="navbar navbar-light bg-light m-4 color-white">
+    <nav class="navbar navbar-light bg-light m-4">
 
 
-        <a class="col-9 navbar-brand"><i class="m-4 fa-brands fa-instagram align-content-center">Instagram</i></a>
+        <a class="col-9 col-sm-9 navbar-brand"><i class="m-4 far fa-brands fa-instagram align-content-center ">Instagram</i></a>
 
         <!-- Button trigger modal -->
-        <button type="button" class="col-2 btn btn-primary modal-sm color-green" data-bs-toggle="modal"
+        <button type="button" class="col-2 col-sm-2 btn btn-primary modal-sm color-green" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             Create a new post
         </button>
 
         <!-- Modal -->
-        <div class="modal fade col-1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade col-1 col-sm-1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
+                    <div class="modal-body container">
+                        <label for="inputPassword5" class="form-label">Caption:</label>
+                        <input class="form-control" placeholder="Add the caption of your post here">
+                        <div class="d-inlineflex">
+                            <i class="fa-solid fa-camera mt-2 mr-1 p-2 border border-1 rounded color-grey"></i>
+                            <i class="fa-solid fa-location-dot mt-2 mr-1 p-2 border border-1 rounded color-grey"></i>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-primary color-green">Publish</button>
                     </div>
                 </div>
             </div>
@@ -77,7 +87,7 @@
                 <i class="fa-solid fa-gear"></i>
             </button>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Accesibility</a></li>
                 <li><a class="dropdown-item" href="#">Privacy and data</a></li>
@@ -90,19 +100,98 @@
 
     </nav>
 
-    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" >
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-grid">grid</i></button>
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-grid-2 color-grey" ></i></button>
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
         </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-      </div>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active container-fluid" id="pills-home" role="tabpanel"
+            aria-labelledby="pills-home-tab">
+            <div class="row mb-3">
+                <div class="col-4"> <img
+                        src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-12.jpg"></div>
+                <div class="col-4"> <img
+                        src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-10.jpg"></div>
+                <div class="col-4"> <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-5.jpg">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4"> <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-6.jpg">
+                </div>
+                <div class="col-4"> <img src="https://www.dzoom.org.es/wp-content/uploads/2011/08/insp-cuadradas-3.jpg">
+                </div>
+                <div class="col-4"> <img
+                        src="https://i0.wp.com/hotbook.mx/wp-content/uploads/2019/01/fotosparis_portada.jpg?fit=1024%2C682&ssl=1">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4"> <img
+                        src="https://ep01.epimg.net/verne/imagenes/2019/11/13/album/1573641411_551713_1573641467_album_normal.jpg">
+                </div>
+                <div class="col-4"> <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkKMufRQYm6dwdCNMp4l_XrpREZ9ZPhyzyw&usqp=CAU">
+                </div>
+                <div class="col-4"> <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqrXU2-0GdQa8ALCs5mpv2yBHORMJA7Hlhtg&usqp=CAU">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" style="margin-left: 33%;" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+
+            <div class="card" style="width: 40rem;">
+                <div class="card-body">
+                    <h5 class="card-title">My first photo!</h5>
+                </div>
+                <img src="https://delangelclinicaveterinaria.com/wp-content/uploads/2021/06/perros.png">
+                <div class="card-body">
+                    <p class="card-text"><b>204 likes</b><br>Miren esta ternurita de beagle, esa caritaa!!</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 40rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Por Favor!</h5>
+                </div>
+                <img
+                    src="https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2021/12/04/pisco-y-el-gato-con-botas.jpeg">
+                <div class="card-body">
+                    <p class="card-text"><b>155 likes</b><br>El gato que arrasa en Instagram por ser igual que el Gato
+                        con Botas de Shrek</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 40rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Comida Colombiana</h5>
+                </div>
+                <img
+                    src="https://rvca738f6h5tbwmj3mxylox3-wpengine.netdna-ssl.com/es/wp-content/uploads/sites/2/2018/01/ColombianFood_Empanadas.jpg">
+                <div class="card-body">
+                    <p class="card-text"><b>569 likes</b><br>Estos bocadillos crujientes de harina de maíz son un motivo
+                        de orgullo nacional, por lo que no es de extrañar que hayan surgido restaurantes totalmente
+                        dedicados a ellos. Tres que encabezan la lista de los vecinos del lugar son Empanadas el Paisa,
+                        que hace unos años pasó de ser un carrito de comida a una propiedad inmobiliaria; Empanadas de
+                        Las Buenas, donde los cocineros usan menos rellenos y más carne; y las pequeñas pero poderosas
+                        de Las Margaritas, ya centenarias.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
+
+    </div>
 
 </body>
 
